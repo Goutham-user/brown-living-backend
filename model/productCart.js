@@ -6,8 +6,8 @@ const productCartSchema = new mongoose.Schema({
     priceOld: {type: String},
     category: { type: String },
     image: { type: String },
-    quantity: {type : Number},
-    user: { type: String }
+    quantity: {type : Number, default: 1},
+    user: { type: String },
 }, { timestamps: true });
 
 
